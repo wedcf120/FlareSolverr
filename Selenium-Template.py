@@ -38,3 +38,6 @@ for link in links[:3]:
     html_string += response
 
 print(html_string)
+
+with open('./sharemania.html', 'w', encoding='utf-8') as f:
+    f.write(html_string)
