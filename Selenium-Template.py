@@ -34,7 +34,7 @@ new_links = set(links) - saved_links
 with open('links.txt', 'w') as f:
     for link in links:
         f.write(link + '\n')
-
+exit()
         
 html_string = ""
 
