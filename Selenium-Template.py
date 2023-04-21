@@ -4,7 +4,6 @@ import re
 import os
 import json
 import subprocess
-import requests
 from datetime import datetime
 
 subprocess.Popen(['sudo', 'python', 'src/flaresolverr.py'])
