@@ -23,11 +23,19 @@ response = data.get("solution", {}).get("response")
 pattern = r'href\=\"(threads\/.+?)\"\>'
 links = re.findall(pattern, response)
 
-print (links)
+with open('links.txt', 'w') as f:
+    for link in links:
+        f.write(link + '\n')
+
+with open('links.txt', 'r') as f:
+    saved_links = set(f.read().splitlines())
+
+# Find the new links
+new_links = set(links) - saved_links
 
 html_string = ""
 
-for link in links[:3]:
+for link in new_links[:3]:
     url = "https://sharemania.us/" + link
     print(url)
     os.system("pkill chrome;pkill chromedriver")
@@ -106,3 +114,6 @@ if re.findall(regex_link, html) and re.findall(regex_tit, html):
 else:
     rss = f'{header}\n\t<item>\n\t\t<title>出错，请检查 {date}-{hour}</title>\n\t\t<link>{url}#{date}-{hour}</link>\n\t</item>\n{footer}'
     print(rss)
+    
+with open('./sharemania.xml', 'w', encoding='utf-8') as f:
+    f.write(rss_feed)
