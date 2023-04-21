@@ -38,7 +38,7 @@ with open('links.txt', 'w') as f:
         
 html_string = ""
 
-for link in new_links[:3]:
+for link in new_links:
     url = "https://sharemania.us/" + link
     print(url)
     os.system("pkill chrome;pkill chromedriver")
