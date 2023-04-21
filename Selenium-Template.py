@@ -34,8 +34,7 @@ for link in links[:3]:
     curl_cmd = "curl -s 'http://localhost:8191/v1' -H 'Content-Type: application/json' --data '{\"cmd\": \"request.get\",\"url\":\"" + url + "\",\"maxTimeout\": 60000}'"
     result = subprocess.check_output(curl_cmd, shell=True)
     data = json.loads(result.decode('utf-8'))
-    print(data)
     response = data.get("solution", {}).get("response")
-    #html_string += response
+    html_string += response
 
-print(url)
+print(html_string)
