@@ -23,9 +23,6 @@ response = data.get("solution", {}).get("response")
 pattern = r'href\=\"(threads\/.+?)\"\>'
 links = re.findall(pattern, response)
 
-with open('links.txt', 'w') as f:
-    for link in links:
-        f.write(link + '\n')
 
 with open('links.txt', 'r') as f:
     saved_links = set(f.read().splitlines())
@@ -33,6 +30,12 @@ with open('links.txt', 'r') as f:
 # Find the new links
 new_links = set(links) - saved_links
 
+
+with open('links.txt', 'w') as f:
+    for link in links:
+        f.write(link + '\n')
+
+        
 html_string = ""
 
 for link in new_links[:3]:
