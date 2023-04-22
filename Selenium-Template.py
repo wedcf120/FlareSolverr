@@ -63,7 +63,7 @@ hour = now.strftime("%H")
 
 regex_link = r'link rel\=\"canonical\" href="(.+?)\"'
 regex_tit = r'\<title\>(.+?) \| ShareMania\.US'
-regex_con = r'meta name\=\"description\" content=\"([\s\S]*?)\<div id\=\"loginBar\"'
+regex_con = r'div class\=\"messageInfo primaryContent\" style=\"height\: auto \!important\;\"[\s\S]*?(\<article\>[\s\S]*?\<\/article\>)'
 regex_prefix = r'Discussion in.+?\>(.+?)\<\/a\>'
 regex_author = r'started by.+?\>(.+?)\<\/a\>'
 
@@ -97,7 +97,7 @@ if re.findall(regex_link, html) and re.findall(regex_tit, html):
         prefix = re.sub(r'\Discussion in.+?\>(.+?)\<\/a\>', r'\1', prefixs[i])
         title = re.sub(r'\<title\>(.+?) \| ShareMania\.US', r'\1', titles[i])
         author = re.sub(r'started by.+?\>(.+?)\<\/a\>', r'\1', authors[i])
-        article = re.sub(r'meta name\=\"description\" content=\"([\s\S]*?)\<div id\=\"loginBar\"', '\1', articles[i], flags=re.DOTALL)
+        article = re.sub(r'div class\=\"messageInfo primaryContent\" style=\"height\: auto \!important\;\"[\s\S]*?(\<article\>[\s\S]*?\<\/article\>)', '\1', articles[i], flags=re.DOTALL)
         
 
 
