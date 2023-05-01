@@ -6,7 +6,7 @@ import json
 import subprocess
 from datetime import datetime
 
-subprocess.Popen(['sudo', 'python', 'src/flaresolverr.py'])
+#subprocess.Popen(['sudo', 'python', 'src/flaresolverr.py'])
 
 # 睡眠 20 秒以确保 flaresolverr.py 已经启动
 time.sleep(32)
