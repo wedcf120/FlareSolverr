@@ -27,10 +27,8 @@ jobs:
         run: pip install chromedriver-autoinstaller selenium pyvirtualdisplay
       - name: Install xvfb
         run: sudo apt-get install xvfb
-      - name: Install FlareSolverr
-        run: sudo git clone https://github.com/FlareSolverr/FlareSolverr
       - name: Running the Python script
-        run: cd FlareSolverr && sudo pip install -r requirements.txt && sudo python src/src/flaresolverr.py & python Selenium-Template.py
+        run: sudo git clone https://github.com/FlareSolverr/FlareSolverr && cd FlareSolverr && sudo pip install -r requirements.txt && sudo python src/src/flaresolverr.py & python Selenium-Template.py
         
       - name: Commit and Push The Results From Python Selenium Action
         run: |
