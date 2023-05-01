@@ -9,7 +9,7 @@ from datetime import datetime
 #subprocess.Popen(['sudo', 'python', 'src/flaresolverr.py'])
 
 # 睡眠 20 秒以确保 flaresolverr.py 已经启动
-time.sleep(32)
+time.sleep(36)
 
 # 使用 subprocess 模块调用 curl 命令，并捕获命令输出结果
 curl_cmd = "curl 'http://localhost:8191/v1' -H 'Content-Type: application/json' --data '{\"cmd\": \"request.get\",\"url\":\"https://sharemania.us/\",\"maxTimeout\": 60000}'"
