@@ -12,13 +12,13 @@ from datetime import datetime
 time.sleep(32)
 
 # 使用 subprocess 模块调用 curl 命令，并捕获命令输出结果
-curl_cmd = "curl 'http://localhost:8191/v1' -H 'Content-Type: application/json' --data '{\"cmd\": \"request.get\",\"url\":\"https://sharemania.us/\",\"maxTimeout\": 60000}'"
+curl_cmd = "curl 'http://localhost:8191/v1' -H 'Content-Type: application/json' --data '{\"cmd\": \"request.get\",\"url\":\"https://google.com/\",\"maxTimeout\": 60000}'"
 result = subprocess.check_output(curl_cmd, shell=True)
 
 # 解析 JSON 数据
 data = json.loads(result.decode('utf-8'))
 response = data.get("solution", {}).get("response")
-#print(response)  # 输出 response 数据
+print(response)  # 输出 response 数据
 
 pattern = r'href\=\"(threads\/.+?)\"\>'
 links = re.findall(pattern, response)
