@@ -28,7 +28,7 @@ jobs:
       - name: Install xvfb
         run: sudo apt-get install xvfb
       - name: Install FlareSolverr
-        run: sudo git clone https://github.com/FlareSolverr/FlareSolverr && cd FlareSolverr && sudo pip install -r requirements.txt
+        run: sudo git clone https://github.com/FlareSolverr/FlareSolverr && cd FlareSolverr && sudo pip install -r requirements.txt && sudo python src/src/flaresolverr.py &
 
       - name: Running the Python script
         run: python Selenium-Template.py
