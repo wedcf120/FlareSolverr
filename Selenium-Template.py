@@ -31,9 +31,10 @@ with open('links.txt', 'r') as f:
 new_links = set(links) - saved_links
 
 
-with open('links.txt', 'w') as f:
-    for link in links:
-        f.write(link + '\n')
+if len(links) != 0 and len(links) >= 5:
+    with open('links.txt', 'w') as f:
+        for link in links:
+            f.write(link + '\n')
 
         
 html_string = ""
