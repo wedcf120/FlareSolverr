@@ -8,124 +8,17 @@
 
  
                 <item>
-                <title><![CDATA[【Miscellaneous】PC GAMES - Silent Hill 3 (Enhanced Graphics and HD Cutscenes) [2003]]]></title>
-                <link><![CDATA[https://sharemania.us/threads/pc-games-silent-hill-3-enhanced-graphics-and-hd-cutscenes-2003.220647/]]></link>
+                <title><![CDATA[【Requests】[REQ AUD] - Britney Spears - Circus (Dolby Atmos) Apple Music]]></title>
+                <link><![CDATA[https://sharemania.us/threads/britney-spears-circus-dolby-atmos-apple-music.220650/]]></link>
                 <description><![CDATA[<article>
 <blockquote class="messageText SelectQuoteContainer ugc baseHtml">
-<img src="https://media.moddb.com/images/games/1/18/17393/Silent_Hill_3_Dvd_ntsc.jpg" class="bbCodeImage LbImage" alt="[​IMG]" data-url="https://media.moddb.com/images/games/1/18/17393/Silent_Hill_3_Dvd_ntsc.jpg" style=""><br>
+<a href="https://music.apple.com/br/album/circus-deluxe-version/990422389" target="_blank" class="externalLink" rel="nofollow">https://music.apple.com/br/album/circus-deluxe-version/990422389</a><br>
 <br>
-<b><i>Silent Hill 3</i></b> is the third installment in the Silent Hill survival horror series. It is the second game to be released on the PC and PlayStation 2, and unlike Silent Hill 2 and Silent Hill 4: The Room, it was never ported to the original Xbox. The game was developed by Team Silent and published by Konami, and it launched in North America on August 6, 2003.<br>
-<br>
-<b>Installation: </b><br>
-<ol>
-<li>Install <b>Silent Hill 3</b>:
-<div class="bbCodeBlock bbCodeVfcHH HiddenContent">
-<div class="attribution type">Hidden Content:</div>
-<blockquote>You must reply before you can see the hidden data contained here.</blockquote>
-</div></li>
-<li>Once installed, go to the desktop, right click on the game shortcut and open the game directory folder.</li>
-<li>Download <b>Silent Hill 3 - Widescreen Fix</b> and extract its contents.</li>
-<li>Move <b>scripts</b> and <b>dinput8.dll</b> to the game directory.</li>
-<li>Open <b>Silent Hill3.WidescreenFix.ini</b> (inside scripts folder) and set these options: </li>
-</ol><div style="padding-left: 30px">[MAIN]<br>
-ResX = 0<br>
-ResY = 0<br>
-RenderResX = 1920<br>
-RenderResY = 1080<br>
-FixMenu = 1<br>
-FixFMV = 1​</div><br>
-<div style="padding-left: 30px"> [MISC]<br>
-FMVWidescreenMode = 2 // FMV letterboxing will be cropped to fill the screen. Use "FMVWidescreenMode = 2" if you have widescreen FMVs from HD collection.<br>
-DisableCutsceneBorders = 1 // Removes cutscene letterboxing.<br>
-DisableSafeMode = 1 // Prevents the game from using default settings after closing the game.<br>
-PixelationFix = 1 // Subtracts 0.5 from render resolution to fix transition bug.<br>
-StatusScreenRes = 512 // Controls resolution of status screen image.<br>
-ShadowsRes = 512 // Controls resolution of dynamic shadows.<br>
-DOFRes = 512 // Controls resolution of depth of field and other blur effects.<br>
-FrameRateFluctuationFix = 2 // Prevents the framerate from jumping between 60 FPS and 30 FPS. (1 = 60 FPS | 2 = 30 FPS)<br>
-ReduceCutsceneFOV = 0 // Cutscenes will use vert- scaling to hide off-screen characters.<br>
-SH2Reference = 1 // Enables several SH2 references for new saves. A feature from sh3proxy.<br>
-FogComplexity = 25 // The higher the value, the more detailed the fog appears. 25 = original value.​</div> 6. Download <b>Silent Hill 3 - HD Collection Cutscenes</b> and extract its contents.<br>
-7. Run <b>setup.exe</b> as administrator and wait for the package to get installed.<br>
-8. If you followed step by step, then you're ready to play one of the best survival horror games ever!<br>
-<b>LINKS:<br>
-<br>
-Silent Hill 3 - Widescreen Fix:</b>
-<div class="bbCodeBlock bbCodeVfcHH HiddenContent">
-<div class="attribution type">Hidden Content:</div>
-<blockquote>You must reply before you can see the hidden data contained here.</blockquote>
-</div><b>Silent Hill 3 - HD Collection Cutscenes:</b>
-<div class="bbCodeBlock bbCodeVfcHH HiddenContent">
-<div class="attribution type">Hidden Content:</div>
-<blockquote>You must reply before you can see the hidden data contained here.</blockquote>
-</div>
+Thanks
 <div class="messageTextEndMarker">&nbsp;</div>
 </blockquote>
 </article>]]></description>
-                <author><![CDATA[danimanticore]]></author>
-                </item>
-
-                
-                <item>
-                <title><![CDATA[【Requests】[REQ CAP] - Alac lossless request for an album exclusively released  only on apple music platform]]></title>
-                <link><![CDATA[https://sharemania.us/threads/alac-lossless-request-for-an-album-exclusively-released-only-on-apple-music-platform.220649/]]></link>
-                <description><![CDATA[<article>
-<blockquote class="messageText SelectQuoteContainer ugc baseHtml">
-This is my first time posting on any internet forum. So sorry for my mistakes.<br>
-<br>
-<a href="https://music.apple.com/in/album/hadh-ep/1529550113?ls" target="_blank" class="externalLink" rel="nofollow">https://music.apple.com/in/album/hadh-ep/1529550113?ls</a><br>
-Above is the link to album that has been released only on apple. Theres no cd so i cant get wav/flac.<br>
-Can anyone help me get ALAC lossless 16bit 44.1khz for this album<br>
-<br>
-If not the whole album The track "Parwardighara" is needed as its my favourite and want it
-<div class="messageTextEndMarker">&nbsp;</div>
-</blockquote>
-</article>]]></description>
-                <author><![CDATA[daichi]]></author>
-                </item>
-
-                
-                <item>
-                <title><![CDATA[【HD Live Performances】HDTV - Ciara - DVD Live At Jackie Tour In DC (2015)]]></title>
-                <link><![CDATA[https://sharemania.us/threads/ciara-dvd-live-at-jackie-tour-in-dc-2015.220648/]]></link>
-                <description><![CDATA[<article>
-<blockquote class="messageText SelectQuoteContainer ugc baseHtml">
-<img src="https://i.postimg.cc/mDGC0pgt/dvd-ciara-jackie-tour.jpg" class="bbCodeImage LbImage" alt="[​IMG]" data-url="https://i.postimg.cc/mDGC0pgt/dvd-ciara-jackie-tour.jpg" style=""><br>
-<br>
-01 Jackie (B.M.F.)<br>
-02 Oh/All Day<br>
-03 That's How I'm Feelin' <br>
-04 1, 2 Step <br>
-05 Stuck On You <br>
-06 Dance Like We're Making Love <br>
-07 Cherish The Day<br>
-08 Promise<br>
-09 One Woman Army (Interlude)<br>
-10 Like A Boy<br>
-11 Billie Jean (Interlude)<br>
-12 Get Up<br>
-13 I Believe In You And Me/Before I Let You Go/Crazy (Background Singers Interlude)<br>
-14 All Good/So What/Like You/Lose Control <br>
-15 Ride/Pony<br>
-16 Lullaby <br>
-17 Body Party/My Boo <br>
-18 I Run It (Interlude) <br>
-19 I'm Out<br>
-20 I Will Survive<br>
-21 I Bet <br>
-22 Goodies <br>
-23 I Got You <br>
-24 Give Me Love<br>
-25 Jackie Tour Band Auditions (Behind The Scenes) (Bonus Video)<br>
-<br>
-<div class="bbCodeBlock bbCodeVfcHH HiddenContent">
-<div class="attribution type">Hidden Content:</div>
-<blockquote>You must either reply or click 'Like' to see the hidden information contained here.</blockquote>
-</div>
-<div class="messageTextEndMarker">&nbsp;</div>
-</blockquote>
-</article>]]></description>
-                <author><![CDATA[Robert Forever]]></author>
+                <author><![CDATA[Adelenews]]></author>
                 </item>
 
                 </channel></rss>
