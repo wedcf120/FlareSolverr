@@ -39,7 +39,7 @@ try:
         img_filename = img_url.split('/')[-1]
     
         # 检查目标文件是否存在
-        if os.path.isfile(f"src/{img_filename}"):
+        if os.path.isfile(f"./src/{img_filename}"):
             print(f"文件 {img_filename} 已存在，跳过下载。")
             continue  # 跳过当前循环并继续下一个循环
 
@@ -47,7 +47,7 @@ try:
         img_result = subprocess.run(curl_cmd_2, shell=True)
         img_data = json.loads(img_result.decode('utf-8'))
         img_response = img_data.get("solution", {}).get("response")
-        with open(f"src/{img_filename}", "wb") as file:
+        with open(f"./src/{img_filename}", "wb") as file:
             file.write(img_response)
         os.system("pkill chrome; pkill chromedriver")
         found_images = True
