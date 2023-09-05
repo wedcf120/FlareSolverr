@@ -9,8 +9,8 @@ from datetime import datetime
 
 #subprocess.Popen(['sudo', 'python', 'src/flaresolverr.py'])
 
-# 睡眠 20 秒以确保 flaresolverr.py 已经启动
-time.sleep(36)
+# 睡眠 40 秒以确保 flaresolverr.py 已经启动
+time.sleep(46)
 
 #判断代理有没有用
 os.system("curl --proxy 127.0.0.1:1085 https://proapi.115.com/app/uploadinfo")
