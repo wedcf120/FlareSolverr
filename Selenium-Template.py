@@ -20,17 +20,6 @@ curl_cmd = "curl 'http://localhost:8191/v1' -H 'Content-Type: application/json' 
 result = subprocess.check_output(curl_cmd, shell=True)
 
 
-# 解析 JSON 数据
-data = json.loads(result.decode('utf-8'))
-response = data.get("solution", {}).get("response")
-print(response)  # 输出 response 数据
-
-
-# 使用正则表达式从结果中提取图片地址
-pattern = r'https://img\.supjav\.com/images/.+?\.(jpg|png|bmp)'
-try:
-    matches = re.finditer(pattern, result.decode('utf-8'))
-    found_images = False
 
 # 解析 JSON 数据
 data = json.loads(result.decode('utf-8'))
