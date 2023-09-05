@@ -33,7 +33,7 @@ try:
     matches = re.finditer(pattern, result.decode('utf-8'))
     found_images = False
 
-for match in matches:
+ for match in matches:
     img_url = match.group()
     # 构建第二个 curl 命令来下载图片
     img_filename = img_url.split('/')[-1]
