@@ -28,7 +28,7 @@ print(response)  # 输出 response 数据
 
 # 使用正则表达式从结果中提取图片地址
 pattern = r'https://img\.supjav\.com/images/.+?\.(jpg|png|bmp)'
-matches = re.finditer(pattern, result)
+matches = re.finditer(pattern, response)
 for match in matches:
     img_url = match.group()
     # 构建第二个 curl 命令来下载图片
