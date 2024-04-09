@@ -47,6 +47,7 @@ jobs:
           python Selenium-Template.py https://supjav.com/ja/category/censored-jav/page/8 >> supjav.html
 
           python Selenium-Template.py https://www.javlibrary.com/cn/vl_star.php?mode=2&s=aa3de&page=1 >> javl-Himari.html
+          python Selenium-Template.py https://www.javlibrary.com/cn/vl_star.php?mode=2&s=aagvy&page=1 >> javl-葵ななせ.html
 
           #删除bin/ky-github.json
           rm -rf bin/ky-github.json
