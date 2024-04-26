@@ -58,7 +58,8 @@ time.sleep(46)
 os.system("curl --proxy 127.0.0.1:1085 https://proapi.115.com/app/uploadinfo")
 
 # 使用 subprocess 模块调用 curl 命令，并捕获命令输出结果
-curl_cmd = "curl 'http://localhost:8191/v1' -H 'Content-Type: application/json' --data '{\"cmd\": \"request.get\",\"url\":\"" + sys.argv[1] + "\",\"maxTimeout\": 60000, \"proxy\": { \"url\": \"http://127.0.0.1:1085\" }}'"
+curl_cmd = "curl 'http://localhost:8191/v1' -H 'Content-Type: application/json' --data '{\"cmd\": \"request.get\",\"url\":\"" + sys.argv[1] + "\",\"maxTimeout\": 60000}'"
+#curl_cmd = "curl 'http://localhost:8191/v1' -H 'Content-Type: application/json' --data '{\"cmd\": \"request.get\",\"url\":\"" + sys.argv[1] + "\",\"maxTimeout\": 60000, \"proxy\": { \"url\": \"http://127.0.0.1:1085\" }}'"
 result = subprocess.check_output(curl_cmd, shell=True)
 
 
