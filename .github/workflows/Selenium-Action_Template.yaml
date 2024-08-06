@@ -20,7 +20,7 @@ jobs:
       - name: Installing package list
         run: apt list --installed    
       - name: Removing previous chrome instances on runner 
-        run: sudo apt purge google-chrome-stable  && rm -rf  /usr/bin/chromium
+        run: sudo apt purge google-chrome-stable  && sudo rm -rf  /usr/bin/chromium
 
       - name: chrome instances
         uses: browser-actions/setup-chrome@v1
