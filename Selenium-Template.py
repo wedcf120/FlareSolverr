@@ -88,8 +88,8 @@ try:
             print(f"文件 {img_filename} 已存在，跳过下载。")
             continue  # 跳过当前循环并继续下一个循环
 
-        #curl_cmd_2 = f"curl 'http://localhost:8191/v1' -H 'Content-Type: application/json' --data '{{\"cmd\": \"request.get\",\"url\":\"{img_url}\",\"maxTimeout\": 60000, \"proxy\": {{ \"url\": \"http://127.0.0.1:1085\" }} }}'"
-        curl_cmd_2 = f"curl 'http://localhost:8191/v1' -H 'Content-Type: application/json' --data '{{\"cmd\": \"request.get\",\"url\":\"{img_url}\",\"maxTimeout\": 60000 }}'"
+        curl_cmd_2 = f"curl 'http://localhost:8191/v1' -H 'Content-Type: application/json' --data '{{\"cmd\": \"request.get\",\"url\":\"{img_url}\",\"maxTimeout\": 60000, \"proxy\": {{ \"url\": \"http://127.0.0.1:1085\" }} }}'"
+        #curl_cmd_2 = f"curl 'http://localhost:8191/v1' -H 'Content-Type: application/json' --data '{{\"cmd\": \"request.get\",\"url\":\"{img_url}\",\"maxTimeout\": 60000 }}'"
        
         img_result = subprocess.run(curl_cmd_2, shell=True)
         img_data = json.loads(img_result.decode('utf-8'))
