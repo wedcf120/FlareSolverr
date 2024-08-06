@@ -31,7 +31,8 @@ jobs:
        # Need to fetch reqs if needed
       - name: Installing all necessary packages
         #run: pip install chromedriver-autoinstaller selenium pyvirtualdisplay
-        run: pip install selenium pyvirtualdisplay
+        run: pip install selenium pyvirtualdisplay && sudo ln -s /opt/hostedtoolcache/setup-chrome/chromium/126.0.6478.182/x64/chrome /usr/bin/chrome
+        
       - name: Install xvfb
         run: sudo apt-get install xvfb
       - name: Running the Python script
