@@ -23,8 +23,11 @@ jobs:
         run: sudo apt purge google-chrome-stable  
 
       - name: chrome instances
-        run: cd /tmp && curl -O "https://storage.googleapis.com/chrome-for-testing-public/126.0.6478.55/linux64/chrome-linux64.zip" && curl -O "https://storage.googleapis.com/chrome-for-testing-public/126.0.6478.55/linux64/chromedriver-linux64.zip" && unzip chrome-linux64.zip && unzip chromedriver-linux64.zip && sudo mv /tmp/chromedriver-linux64/chromedriver /usr/local/bin/ && sudo mv /tmp/chrome-linux64 /usr/local/bin/ && sudo ln -s /usr/local/bin/chrome-linux64/chrome /usr/local/bin/google-chrome  
-        
+        uses: actions/setup-chrome@v1
+        with:
+         chrome-version: 126.0.6478.214 # 指定要下载的Chrome[版本]
+      - name: Use Chrome
+        run: google-chrome-stable --version
        # Need to fetch reqs if needed
       - name: Installing all necessary packages
         run: pip install chromedriver-autoinstaller selenium pyvirtualdisplay
