@@ -25,10 +25,9 @@ jobs:
       - name: chrome instances
         uses: browser-actions/setup-chrome@v1
         with:
-         chrome-version: 120 # 指定要下载的Chrome[版本]
+         chrome-version: 126 # 指定要下载的Chrome[版本]
          install-chromedriver: true
-      - name: Use Chrome
-        run: google-chrome-stable --version
+
        # Need to fetch reqs if needed
       - name: Installing all necessary packages
         run: pip install chromedriver-autoinstaller selenium pyvirtualdisplay
