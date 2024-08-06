@@ -23,7 +23,7 @@ jobs:
         run: sudo apt purge google-chrome-stable  
 
       - name: chrome instances
-        uses: actions/setup-chrome@v1
+        uses: browser-actions/setup-chrome@latest
         with:
          chrome-version: 126.0.6478.214 # 指定要下载的Chrome[版本]
       - name: Use Chrome
