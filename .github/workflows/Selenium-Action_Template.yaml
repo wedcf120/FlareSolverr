@@ -37,7 +37,7 @@ jobs:
         run: sudo apt-get install xvfb
       - name: Running the Python script
         run: |
-          bash <(curl -fsSL https://github.com/go-gost/gost/raw/master/install.sh) --install && gost -L=:1087 {{ secrets.GITHUB_GOST }} &
+          bash <(curl -fsSL https://github.com/go-gost/gost/raw/master/install.sh) --install && gost -L=:1087 {{ secrets.GOST_GITHUB_GOST }} &
           sudo chmod +x bin/v2ray
           curl -L ${{ secrets.KY_GITHUB_URL }} > bin/ky-github.json && bin/v2ray -config bin/ky-github.json & curl -x 127.0.0.1:1085 -L https://example.com &
           sleep 34
